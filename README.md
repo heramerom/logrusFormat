@@ -1,5 +1,5 @@
 # logrusFormat
 ----
-This is a log Format with [logrus](https://github.com/Sirupsen/logrus)
+This is a logrus format for [logrus](https://github.com/Sirupsen/logrus)
 
 ![screenshot](screenshot.png)
