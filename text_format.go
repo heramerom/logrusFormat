@@ -52,8 +52,8 @@ func (f *TextFormat) Format(entry *logrus.Entry) ([]byte, error) {
 		}
 		buf.WriteString(color)
 	}
-	buf.WriteString(fmt.Sprintf("[%s] ", levelText))
 	buf.WriteString(fmt.Sprintf("[%s] ", entry.Time.Format(_time_format)))
+	buf.WriteString(fmt.Sprintf("[%s] ", levelText))
 	for k, v := range entry.Data {
 		buf.WriteString(fmt.Sprintf("[%s=%v] ", k, v))
 	}
